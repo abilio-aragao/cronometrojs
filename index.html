@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cronómetro</title>
+
+    <style>
+        body{
+            background-image: url("145702_original_6000x4000.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            overflow-y: hidden;
+           font-family: 'Courier New', Courier, monospace;
+           height: 100vh;
+        }
+        #tt{
+            color: rgb(0, 0, 0);
+            background-color: rgba(255, 255, 255, 0.099);
+            padding: 15px;
+            margin: 35px auto;
+            width: 50%;
+            text-align: center;
+            box-shadow: 3px 2px 4px rgba(0, 0, 0, 0.316);
+        }
+        #numbers{
+            color: rgb(255, 255, 255);
+            font-size: 56pt;
+            padding: 12px;
+            margin: 100px auto;
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+            
+        }
+    
+        #controls{
+            display: flex;
+            justify-content: space-evenly;
+        }
+    
+        #controls .btn{
+            color: rgb(0, 0, 0);
+            box-shadow: 3px 2px 4px rgba(0, 0, 0, 0.316);
+            padding: 15px;
+            font-size: 14pt;
+            font-weight: bold;
+            background-color: rgba(255, 255, 255, 0.329);
+            cursor: default;
+            border: none;
+            /*
+            transition: all .3s;*/
+        }
+
+        /*
+        #controls .btn:hover{
+            transform: translateY(-2px);
+        }
+    */
+    
+    </style>
+
+    <script src="script.js"></script>
+</head>
+
+
+<body>
+    <h1 id="tt">CRONÓMETRO</h1>
+
+    <div id="area_count">
+        <div id="numbers"><span id="tens">00</span> : <span id="seconds">00</span></div>
+        <div id="controls">
+            <button class="btn" id="start">Start</button>
+            <button class="btn" id="stop">Stop</button>
+            <button class="btn" id="reset">Reset</button>
+        
+    </div>
+    </div>
+</body>
+</html>
